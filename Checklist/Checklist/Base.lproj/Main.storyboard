@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qam-cu-7bx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16097.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Checklist View Controller-->
+        <scene sceneID="2rW-wz-bmW">
+            <objects>
+                <tableViewController id="qam-cu-7bx" customClass="ChecklistViewController" customModule="Checklist" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cN7-jv-JKR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="CheckListItem" id="cEa-eB-Q9k">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cEa-eB-Q9k" id="S47-n4-KNV">
+                                    <rect key="frame" x="0.0" y="0.0" width="370" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy Milk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6y-2H-myn">
+                                            <rect key="frame" x="20" y="11" width="330" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="v6y-2H-myn" firstAttribute="leading" secondItem="S47-n4-KNV" secondAttribute="leading" constant="20" symbolic="YES" id="95G-Yw-TJn"/>
+                                        <constraint firstAttribute="bottom" secondItem="v6y-2H-myn" secondAttribute="bottom" constant="11" id="KE2-6u-Yqx"/>
+                                        <constraint firstAttribute="trailing" secondItem="v6y-2H-myn" secondAttribute="trailing" constant="20" symbolic="YES" id="qnP-yh-Fa9"/>
+                                        <constraint firstItem="v6y-2H-myn" firstAttribute="top" secondItem="S47-n4-KNV" secondAttribute="top" constant="11" id="srP-LZ-AB5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qam-cu-7bx" id="Sgy-c2-P9e"/>
+                            <outlet property="delegate" destination="qam-cu-7bx" id="6Gi-XG-h5k"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sBf-gl-pM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84.057971014492765" y="44.866071428571423"/>
+        </scene>
+    </scenes>
+</document>
