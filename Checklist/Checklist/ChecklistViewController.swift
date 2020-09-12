@@ -52,44 +52,12 @@ class ChecklistViewController: UITableViewController {
     }
     
     func configureCheckmark(cell: UITableViewCell, at indexPath: IndexPath) {
-        for checkItem in todoList.toDos {
-            if indexPath.row == 0 {
-                if checkItem.checked {
-                    cell.accessoryType = .none
-                } else {
-                    cell.accessoryType = .checkmark
-                }
-                checkItem.checked = !checkItem.checked
-            } else if indexPath.row == 1 {
-                if checkItem.checked {
-                    cell.accessoryType = .none
-                } else {
-                    cell.accessoryType = .checkmark
-                }
-                checkItem.checked = !checkItem.checked
-            }
-            else if indexPath.row == 2 {
-                if checkItem.checked {
-                    cell.accessoryType = .none
-                } else {
-                    cell.accessoryType = .checkmark
-                }
-                checkItem.checked = !checkItem.checked
-            } else if indexPath.row == 3 {
-                if checkItem.checked {
-                    cell.accessoryType = .none
-                } else {
-                    cell.accessoryType = .checkmark
-                }
-                checkItem.checked = !checkItem.checked
-            } else if indexPath.row == 4 {
-                if checkItem.checked {
-                    cell.accessoryType = .none
-                } else {
-                    cell.accessoryType = .checkmark
-                }
-                checkItem.checked = !checkItem.checked
-            }
+        let isChecked = todoList.toDos[indexPath.row].checked
+        if isChecked {
+            cell.accessoryType = .none
+        } else {
+            cell.accessoryType = .checkmark
         }
+        todoList.toDos[indexPath.row].checked = !isChecked
     }
 }
