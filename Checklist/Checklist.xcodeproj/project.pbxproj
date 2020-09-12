@@ -64,11 +64,11 @@
 				34B1F6F12508CD9F00976159 /* SceneDelegate.swift */,
 				34B1F6F32508CD9F00976159 /* ChecklistViewController.swift */,
 				34ABC82A250CCC5600D2D223 /* ToDoList.swift */,
+				34B1F703250B6FE600976159 /* ChecklistItem.swift */,
 				34B1F6F52508CD9F00976159 /* Main.storyboard */,
 				34B1F6F82508CDA200976159 /* Assets.xcassets */,
 				34B1F6FA2508CDA200976159 /* LaunchScreen.storyboard */,
 				34B1F6FD2508CDA200976159 /* Info.plist */,
-				34B1F703250B6FE600976159 /* ChecklistItem.swift */,
 			);
 			path = Checklist;
 			sourceTree = "<group>";
