@@ -51,6 +51,7 @@ class ChecklistViewController: UITableViewController {
         }
     }
     
+    // check mark method
     func configureCheckmark(cell: UITableViewCell, at indexPath: IndexPath) {
         let isChecked = todoList.toDos[indexPath.row].checked
         if isChecked {
